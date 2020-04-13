@@ -1,0 +1,577 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/rix.css">
+	
+  
+<meta charset="utf-8">
+<title>SportRix</title>
+</head>
+<body>
+<div class="container">
+<div class="navbar navbar-default navbar-inverse navbar-fixed-top">
+	<div class="row" style="background: white"> <!--Header welcome Open-->
+		<div class="col-lg-9 left_side">
+			Welcome!
+		</div>
+		<div class="col-lg-3 right_side">
+			Register
+			| Wish List |
+			Custmore Care
+		</div>
+	</div><br><!--Header welcome Close-->
+
+	
+	<div class="row rowbg"> <!--Logo Open-->
+		<div class="col-sm-2">
+		<img class="img-responsive" src="img/sportrixlogo.png">
+		</div>
+		<div class="col-sm-8">
+		<form>
+		<div class="input-group">
+			<input type="text" class="form-control" placeholder="Search..." name="search">
+			<div class="input-group-btn">
+			<button class="btn btn-default" type="submit">
+			<i class="glyphicon glyphicon-search">
+			</i>
+			</button>
+			</div>
+		</div>
+		</form>
+		</div>
+		
+		<div class="col-sm-2">
+			<i class="fas fa-cart-plus icon"></i>
+			<i class="fab fa-facebook icon"></i>
+			<i class="fab fa-twitter-square icon"></i>
+			<i class="fab fa-linkedin icon"></i>
+			<i class="fab fa-instagram icon"></i>
+			<i class="fab fa-pinterest-square icon"></i>
+			<i class="fab fa-youtube-square icon"></i>
+		</div>
+	</div> <!--Logo Close--> 
+	
+	<button type="button" data-toggle="collapse" data-target="#menu" class="navbar-toggle"><!--Menu Open-->
+		<span class="sr-only">Toggle Button</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+	</button>
+		<div id="menu" class="collapse navbar-collapse navbar-right">
+        	<ul class="nav navbar-nav">
+           		<li class="dropdown"><a href="#">Home</a></li>
+           		<li><a href="#">Carrer</a></li>
+           		<li><a href="#">About Us</a></li>
+           		<li><a href="#">Contact Us</a></li>
+           		<li><a href="#">Football</a></li>
+           		<li><a href="#">Running</a></li>
+           		<li><a href="#">Swimming</a></li>
+           		<li><a href="#">Volleyball</a></li>
+           		<li><a href="#">Basketball</a></li>
+           		<li><a href="#">Table Tennis</a></li>
+           		<li class="dropdown"><a href="#">Customer Care<span class="caret"></span></a>
+             		<ul class="dropdown-menu"> 
+        				<li><a href="#">Call us</a></li>                
+             		</ul>
+           		</li>
+				<li><a href="javascript:void(0)" data-target="#contactmodal" data-toggle="modal">LogIn</a></li>
+         	</ul>
+     	</div>   
+	</div>		
+	</div> <!--Menu Close-->
+		<!--Login Model-->
+<div id="contactmodal" class="modal fade" role="alertdialog">
+<div class="modal-dialog">
+   <div class="modal-content" >
+   <div class="row" style="background:url(img/login-img.jpg) no-repeat;margin-right: 0;
+    margin-left: 0 !important;height:415px ">
+   <div class="col-sm-6">
+   <h1>
+    	<span class="txt_small" style="color:white">Welcome to
+        <br />
+        sportrix</span>
+    </h1>
+    <div class="abc" style="margin-top:220px">
+   	<a href="https://www.facebook.com/"><button type="submit" class="form-control btn btn-xs btn-primary">Facebook</button></a>
+    <a href="https://www.google.com/"><button type="submit" class="form-control btn btn-xs btn-danger" style="margin-top:5px">Google+</button></a>
+    </div>
+
+   </div>
+   <div class="col-sm-6">
+       <div class="modal-header">
+          <a href="#contactmodal" data-dismiss="modal" class="close">&times;</a>
+          <h1 style="color:#000;">Log in</h1>
+       </div>
+       
+       <div class="modal-body">
+          <form action="#" method="post" enctype="multipart/form-data">
+                	<div class="form-horizontal">
+		                <label>Email ID:</label>
+        		        <input type="email" name="email" required class="form-control" />
+                	</div>
+                	<br/>
+          		  	
+                	<div class="form-horizontal">
+                    <label>Password:</label>
+                    <input type="password" name="passw" required class="form-control"/>
+                 </div>
+                <br/>
+                <div class="form-horizontal">
+                    <input type="checkbox" name="keep"  required="required"/>
+                    <label>keep me logged in	</label>
+				</div>
+                <br/>
+              
+                <button type="submit" class="form-control btn btn-xs btn-success"><span class="glyphicon glyphicon-user"></span> Log in</button>
+                <br/>
+                <h5 style="color:#000"><center>--------------Or--------------</center></h5>
+			  	<a href="javascript:void(0)" data-target="#contactmodal1" data-toggle="modal" onclick="reg()"><center>Create account</a> | <a href="#">Forget Password</center></a>
+                </form>
+     </div>
+     </div>
+   </div>
+   </div>
+   </div>
+</div>
+
+	<!--Login Closed-->
+	
+	<!--Register Model-->
+		<div id="contactmodal1" class="modal fade" role="alertdialog">
+<div class="modal-dialog">
+   <div class="modal-content" >
+   <div class="row" style="background:url(img/login-img.jpg) no-repeat;margin-right: 0;
+    margin-left: 0 !important;height:415px ">
+   <div class="col-sm-6">
+   <h1>
+    	<span class="txt_small">Welcome to</span>
+        <br />
+        sportrix
+    </h1>
+    <div class="abc" style="margin-top:220px">
+   	<a href="https://www.facebook.com/"><button type="submit" class="form-control btn btn-xs btn-primary">Facebook</button></a>
+    <a href="https://www.google.com/"><button type="submit" class="form-control btn btn-xs btn-danger" style="margin-top:5px">Google+</button></a>
+    </div>
+
+   </div>
+   <div class="col-sm-6">
+       <div class="modal-header">
+          <a href="#contactmodal" data-dismiss="modal" class="close">&times;</a>
+          <h1 style="color:#000;">Register</h1>
+       </div>
+       
+       <div class="modal-body">
+          <form action="registerdb.php" method="post" enctype="multipart/form-data">
+<div class="form-horizontal">
+<label>Your Name</label>
+<input type="text" name="name" required class="form-control"/>
+</div>
+<div class="form-horizontal">
+<label>Mobile Number</label>
+<input type="text" name="mob" required class="form-control"/>
+</div>
+<div class="form-horizontal">
+<label>Email (optional)</label>
+<input type="email" name="email" required class="form-control"/>
+</div>
+<div class="form-horizontal">
+<label>Password</label>
+<input type="password" name="passw" required class="form-control"/>
+</div>
+<br/>
+
+<div class="form-horizontal">
+<button type="submit" class="form-control btn btn-xs btn-success" onclick="sign()"><span class="glyphicon glyphicon-user"></span> Register</button>
+</div>
+</form>
+     </div>
+     </div>
+   </div>
+   </div>
+   </div>
+</div>
+	<!--Register Closed-->
+	<div id="slider" class="carousel slide tetxt"> <!--Slider Open-->
+    	<br/><br/>
+    	<div class="carousel-inner" style="margin-top: 87px">
+        	<div class="item active">
+            	<img src="img/092417_1152_CreateMotio1.jpg" style="width:100%; height:400px"/>
+            </div>
+            <div class="item">
+            	<img src="img/photo-1483721310020-03333e577078.jpg" style="width:100%; height:400px"/>
+            </div>
+            <div class="item">
+            	<img src="img/photo-1551889685-8cfc48b26ab2.jpg" style="width:100%; height:400px"/>
+            </div>
+        </div>
+        <a class="carousel-control left" href="#slider" data-slide="prev" >
+            <span class="icon-prev"></span>
+        </a>
+   		<a class="carousel-control right" href="#slider" data-slide="next" >
+            <span class="icon-next"></span>
+   		</a>
+	</div> <!--Slider Close-->
+	
+	<div class="container-fluid"><br/><!--Blue T-shirt Open-->
+	<div class="row">
+      <div class="col-sm-3">
+        <div class="panel panel-default panel1">
+           <div class="panel-body" style="text-shadow:none">
+             <div class="bluecontainer"><center><img src="img/sports-tshirt-250x250.jpg"></center></div>
+           		<div class="font1"><strong>BLUE T-SHIRT LINE</strong></div>
+		        <div class="font2"><i>Clothing</i></div>
+			    <div class="font3">Best Offer</div>
+			    <div class="boxblack">
+					<div class="boxfontblack">$ 9.00
+					<div class="boxpink "><div class="glyphicon glyphicon-shopping-cart"style="color:white; margin-left: 50px;"></div> ADD</div>	
+					</div>
+			    </div>
+			</div>
+        </div>
+      </div> 	
+		
+		<!--Column 1 close-->
+		<div class="col-sm-3">
+          <div class="panel panel-default panel1">
+           <div class="panel-body" style="text-shadow:none">
+             <div class="bluecontainer"><center><img src="img/sports-tshirt-250x250.jpg"></center></div>
+           		<div class="font1"><strong>BLUE T-SHIRT LINE</strong></div>
+		        <div class="font2"><i>Clothing</i></div>
+			    <div class="font3">Best Offer</div>
+			    <div class="boxblack">
+					<div class="boxfontblack">$ 9.00
+					<div class="boxpink"><div class="glyphicon glyphicon-shopping-cart"style="color:white; margin-left: 33px;"></div> ADD</div>	
+					</div>
+			    </div>
+		  </div>
+         </div>
+       </div><!--Column 1 close-->
+		
+		<!--Column 1 close-->
+		<div class="col-sm-3">
+          <div class="panel panel-default panel1">
+           <div class="panel-body" style="text-shadow:none">
+             <div class="bluecontainer"><center><img src="img/sports-tshirt-250x250.jpg"></center></div>
+           		<div class="font1"><strong>BLUE T-SHIRT LINE</strong></div>
+		        <div class="font2"><i>Clothing</i></div>
+			    <div class="font3">Best Offer</div>
+			    <div class="boxblack">
+					<div class="boxfontblack">$ 9.00
+					<div class="boxpink"><div class="glyphicon glyphicon-shopping-cart"style="color:white; margin-left: 33px;"></div> ADD</div>	
+					</div>
+			    </div>
+		  </div>
+         </div>
+       </div><!--Column 1 close-->
+		
+		<!--Column 1 close-->
+		<div class="col-sm-3">
+          <div class="panel panel-default panel1">
+           <div class="panel-body" style="text-shadow:none">
+             <div class="bluecontainer"><center><img src="img/sports-tshirt-250x250.jpg"></center></div>
+           		<div class="font1"><strong>BLUE T-SHIRT LINE</strong></div>
+		        <div class="font2"><i>Clothing</i></div>
+			    <div class="font3">Best Offer</div>
+			    <div class="boxblack">
+					<div class="boxfontblack">$ 9.00
+					<div class="boxpink"><div class="glyphicon glyphicon-shopping-cart"style="color:white; margin-left: 33px;"></div> ADD</div>	
+					</div>
+			    </div>
+		  </div>
+         </div>
+       </div><!--Column 1 close-->
+	  </div><!--Blue T-shirt Close-->
+	
+		<div class="container-fluid"><br/><!--Main Heading Open-->
+			<div class="row"> 
+				<div class="mainheading">TOP DEALS!</div>
+			</div>
+		</div><!--Main Heading Close-->
+	
+		<div class="container-fluid"><br/><!--TOP Deals Inner Open-->
+			<div class="row">
+<!--				<div class="upbutton glyphicon glyphicon-chevron-right righticon"></div><br>
+					<div class="downbutton glyphicon glyphicon-chevron-left lefticon"></div> -->
+				<div class="col-sm-3 shadowtopdeals mblpreview">
+					<div class="circle1">
+						<div class="circlenum">61
+							<div class="circleper">%</div>
+							<div class="circlesave">Save</div>
+						</div>
+					</div>
+					<center><img src="img/12.png" width="250px" height="250px" alt="trouser"/></center>
+				<div class="fonttrouser">Light grey formal mens trousers isolated on white background.</div><br>
+					<div class="fonttrouser1">by citizen</div><br>
+					<div class="fonttrouser2">$ 250.00
+					<div class="glyphicon glyphicon-plane"></div>
+					</div>
+				</div>	
+				
+				<div class="col-sm-3 shadowtopdeals mblpreview">
+					<div class="circle1">
+						<div class="circlenum">61
+							<div class="circleper">%</div>
+							<div class="circlesave">Save</div>
+						</div>
+					</div>
+					<center><img src="img/12.png" width="250px" height="250px" alt="trouser"/></center>
+				<div class="fonttrouser">Light grey formal mens trousers isolated on white background.</div><br>
+					<div class="fonttrouser1">by citizen</div><br>
+					<div class="fonttrouser2">$ 250.00
+					<div class="glyphicon glyphicon-plane"></div>
+					</div>
+				</div>
+				
+				<div class="col-sm-3 shadowtopdeals mblpreview">
+					<div class="circle1">
+						<div class="circlenum">61
+							<div class="circleper">%</div>
+							<div class="circlesave">Save</div>
+						</div>
+					</div>
+					<center><img src="img/12.png" width="250px" height="250px" alt="trouser"/></center>
+				<div class="fonttrouser">Light grey formal mens trousers isolated on white background.</div><br>
+					<div class="fonttrouser1">by citizen</div><br>
+					<div class="fonttrouser2">$ 250.00
+					<div class="glyphicon glyphicon-plane"></div>
+					</div>
+				</div>
+				
+				<div class="col-sm-3 shadowtopdeals mblpreview">
+					<div class="circle1">
+						<div class="circlenum">61
+							<div class="circleper">%</div>
+							<div class="circlesave">Save</div>
+						</div>
+					</div>
+					
+					<center><img src="img/12.png" width="250px" height="250px" alt="trouser"/></center>
+				<div class="fonttrouser">Light grey formal mens trousers isolated on white background.</div><br>
+					<div class="fonttrouser1">by citizen</div><br>
+					<div class="fonttrouser2">$ 250.00
+					<div class="glyphicon glyphicon-plane"></div>
+					</div>
+				</div>
+		</div>
+		</div><!--TOP Deals Inner Close-->
+		
+		
+
+		
+		
+		
+		<div class="container-fluid"><br/><!--Main Heading TOP BRAND ON SALE Open-->
+			<div class="row"> 
+				<div class="mainheading">TOP BRAND ON SALE!</div>
+			</div>
+		</div><!--Main Heading TOP BRAND ON SALE Close-->
+		
+		<div class="container-fluid"><br/><!--Main Heading TOP BRAND ICON Open-->
+			<div class="row"> 
+				<marquee behavior="alternate" direction=""><img src="img/7e98d3c50ea727161a895ea8894a2305.jpg" width="100px" height="100px" alt="">
+				<img src="img/apple-logo.gif" width="100px" height="100px" alt="">
+				<img src="img/Blackberry.png" width="100px" height="100px" alt="">
+				<img src="img/kkRtB2GM_400x400.jpg"width="100px" height="100px" alt="">
+				<img src="img/levis-2-202638.png" width="100px" height="100px" alt="">
+				<img src="img/Reliance-Logo-Design-Vector-Free-Download.jpeg" width="100px" height="100px" alt=""></marquee>
+			</div>
+		</div><!--Main Heading TOP BRAND ICON Close-->
+		
+		<div class="container-fluid"><br/><!--Main Heading SHOP Open-->
+			<div class="row"> 
+				<div class="mainheading">SHOP POPULAR CATEGORIES!</div>
+			</div>
+		</div><!--Main Heading SHOP Close-->
+		
+		<div class="container-fluid"><br/><!--Main Heading SHOP ITEM Open-->
+			<div class="row"> 
+				<div class="col-sm-3 shadowbox">
+					<div class="panel panel-default panel1">
+           				<div class="panel-body" style="text-shadow:none">
+							<center><img class="img-responsive imgrspnv" src="img/photo-1546383906-0c780bf53528.jpg"></center>
+								<div class="boxblack">
+									<div class="boxfontblackshop">Health & Beauty
+									</div>	
+								</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-sm-3 shadowbox">
+					<div class="panel panel-default panel1">
+           				<div class="panel-body" style="text-shadow:none">
+							<center><img class="img-responsive imgrspnv" src="img/photo-1551984427-6d77a1918093.jpg"></center>
+								<div class="boxblack">
+									<div class="boxfontblackshop">Health & Beauty
+									</div>	
+								</div>
+						</div>
+					</div>
+					</div>
+				
+				<div class="col-sm-3 shadowbox">
+					<div class="panel panel-default panel1">
+           				<div class="panel-body" style="text-shadow:none">
+							<center><img class="img-responsive imgrspnv" src="img/photo-1457449205106-d0aad138e99b.jpg"></center>
+								<div class="boxblack">
+									<div class="boxfontblackshop">Health & Beauty
+									</div>	
+								</div>
+						</div>
+					</div>
+					</div>
+				
+				<div class="col-sm-3 shadowbox">
+					<div class="panel panel-default panel1">
+           				<div class="panel-body" style="text-shadow:none">
+							<center><img class="img-responsive imgrspnv" src="img/photo-1509835668578-a3f197f3049a.jpg"></center>
+								<div class="boxblack">
+									<div class="boxfontblackshop">Health & Beauty
+									</div>	
+								</div>
+						</div>
+					</div>
+				</div>
+			</div><br>
+			
+			<div class="row"> 
+				<div class="col-sm-3 shadowbox">
+					<div class="panel panel-default panel1">
+           				<div class="panel-body" style="text-shadow:none">
+							<center><img class="img-responsive imgrspnv" src="img/photo-1546383906-0c780bf53528.jpg"></center>
+								<div class="boxblack">
+									<div class="boxfontblackshop">Health & Beauty
+									</div>	
+								</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-sm-3 shadowbox">
+					<div class="panel panel-default panel1">
+           				<div class="panel-body" style="text-shadow:none">
+							<center><img class="img-responsive imgrspnv" src="img/photo-1551984427-6d77a1918093.jpg"></center>
+								<div class="boxblack">
+									<div class="boxfontblackshop">Health & Beauty
+									</div>	
+								</div>
+						</div>
+					</div>
+					</div>
+				
+				<div class="col-sm-3 shadowbox">
+					<div class="panel panel-default panel1">
+           				<div class="panel-body" style="text-shadow:none">
+							<center><img class="img-responsive imgrspnv" src="img/photo-1457449205106-d0aad138e99b.jpg"></center>
+								<div class="boxblack">
+									<div class="boxfontblackshop">Health & Beauty
+									</div>	
+								</div>
+						</div>
+					</div>
+					</div>
+				
+				<div class="col-sm-3 shadowbox">
+					<div class="panel panel-default panel1">
+           				<div class="panel-body" style="text-shadow:none">
+							<center><img class="img-responsive imgrspnv" src="img/photo-1509835668578-a3f197f3049a.jpg"></center>
+								<div class="boxblack">
+									<div class="boxfontblackshop">Health & Beauty</div>	
+								</div>
+						</div>
+					</div>
+				</div>
+		</div>
+		</div><!--Main Heading SHOP ITEM Close-->
+		
+		<div class="container-fluid"><!--Suscribe Open-->
+			<div class="row">
+			<div class="suscribe">
+				<div class="suscribefont">Save even more! Get frist-hand access to new arrivals, exculusive offers, and discoundt.</div>
+					<div class="col-sm-3"></div>
+					<div class="col-sm-6">	
+					<form><div class="input-group">
+							<input type="text" class="form-control" placeholder="Enter Your Email..." name="Suscribe">
+							<div class="input-group-btn">
+								<button class="btn btn-default suscribecolor" type="submit">
+									<div class="suscribecolorfont">Suscribe</div>
+								</button>
+							</div>
+						  </div>
+					</form>
+					</div>
+					<div class="col-sm-3"></div>
+			</div>
+			</div>
+		</div><!--Suscribe Close-->
+		
+		<div class="container-fluid"><!--Suscribe Open-->
+			<div class="row">
+			<div class="col-sm-3 ">
+			<div class="businessfont">Grow Your Business!</div>
+				<button type="button" class="btn btn-success boxgreen opnstr">Open Store</button>
+				<div class="sell">Sell</div>
+				<div class="innertext">Sell on Sportrix</div><br>
+				<div class="innertext">Partner Network</div><br>
+				<div class="innertext">Store Management Tool</div><br>
+				<div class="innertext">My Store</div><br>
+				<div class="innertext">Selling F.A.Q.</div><br>
+				<div class="innertext">Seller Policies</div><br>
+				<div class="innertext">Fee Structure</div>	
+			</div>
+				
+				<div class="col-sm-3">
+			<div class="businessfont">Grow Your Business!</div>
+				<button type="button" class="btn btn-success boxgreen opnstr">Open Store</button>
+				<div class="sell">Sell</div>
+				<div class="innertext">Sell on Sportrix</div><br>
+				<div class="innertext">Partner Network</div><br>
+				<div class="innertext">Store Management Tool</div><br>
+				<div class="innertext">My Store</div><br>
+				<div class="innertext">Selling F.A.Q.</div><br>
+				<div class="innertext">Seller Policies</div><br>
+				<div class="innertext">Fee Structure</div>	
+			</div>
+				
+				<div class="col-sm-3">
+			<div class="businessfont">Grow Your Business!</div>
+				<button type="button" class="btn btn-success boxgreen opnstr">Open Store</button>
+				<div class="sell">Sell</div>
+				<div class="innertext">Sell on Sportrix</div><br>
+				<div class="innertext">Partner Network</div><br>
+				<div class="innertext">Store Management Tool</div><br>
+				<div class="innertext">My Store</div><br>
+				<div class="innertext">Selling F.A.Q.</div><br>
+				<div class="innertext">Seller Policies</div><br>
+				<div class="innertext">Fee Structure</div>	
+			</div>
+				
+				<div class="col-sm-3">
+			<div class="businessfont">Grow Your Business!</div>
+				<button type="button" class="btn btn-success boxgreen opnstr">Open Store</button>
+				<div class="sell">Sell</div>
+				<div class="innertext">Sell on Sportrix</div><br>
+				<div class="innertext">Partner Network</div><br>
+				<div class="innertext">Store Management Tool</div><br>
+				<div class="innertext">My Store</div><br>
+				<div class="innertext">Selling F.A.Q.</div><br>
+				<div class="innertext">Seller Policies</div><br>
+				<div class="innertext">Fee Structure</div>	
+			</div>
+				
+			</div>	
+		</div><!--Suscribe Close-->
+		
+		<div class="footer1"><!--Footer Open-->
+			<div class="footerfont">&copy;2018-2019 Sportrix, Canada Eves Crossing
+			</div> 
+		</div><!--Footer Close-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>	
+	<script src="js/rix1.js"></script>
+	
+
+</body>
+</html>

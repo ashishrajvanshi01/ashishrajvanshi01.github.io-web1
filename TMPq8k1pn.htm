@@ -1,0 +1,307 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/rix.css">
+<meta charset="utf-8">
+<title>SportRix</title>
+</head>
+<body>
+<div class="container">
+<div class="navbar navbar-default navbar-inverse navbar-fixed-top">
+	<div class="row" style="background: white"> <!--Header welcome Open-->
+		<div class="col-lg-9 left_side">
+			Welcome!
+		</div>
+		<div class="col-lg-3 right_side">
+			Register
+			| Wish List |
+			Custmore Care
+		</div>
+	</div><br><!--Header welcome Close-->
+
+	
+	<div class="row rowbg"> <!--Logo Open-->
+		<div class="col-sm-2">
+			<img class="img-responsive" src="img/sportrixlogo.png">
+		</div>
+		<div class="col-sm-8">
+		<form>
+		<div class="input-group">
+			<input type="text" class="form-control" placeholder="Search..." name="search">
+			<div class="input-group-btn">
+				<button class="btn btn-default" type="submit">
+					<i class="glyphicon glyphicon-search"></i>
+				</button>
+			</div>
+		</div>
+		</form>
+		</div>
+		
+		<div class="col-sm-2">
+			<i class="fas fa-cart-plus icon"></i>
+			<i class="fab fa-facebook icon"></i>
+			<i class="fab fa-twitter-square icon"></i>
+			<i class="fab fa-linkedin icon"></i>
+			<i class="fab fa-instagram icon"></i>
+			<i class="fab fa-pinterest-square icon"></i>
+			<i class="fab fa-youtube-square icon"></i>
+		</div>
+	</div> <!--Logo Close--> 
+	
+		<button type="button" data-toggle="collapse" data-target="#menu" class="navbar-toggle"><!--Menu Open-->
+			<span class="sr-only">Toggle Button</span>
+        	<span class="icon-bar"></span>
+        	<span class="icon-bar"></span>
+        	<span class="icon-bar"></span>
+		</button>
+		<div id="menu" class="collapse navbar-collapse navbar-right">
+        	<ul class="nav navbar-nav">
+           		<li class="dropdown"><a href="#">Home</a></li>
+           		<li><a href="#">Carrer</a></li>
+           		<li><a href="#">About Us</a></li>
+           		<li><a href="#">Contact Us</a></li>
+           		<li><a href="#">Football</a></li>
+           		<li><a href="#">Running</a></li>
+           		<li><a href="#">Swimming</a></li>
+           		<li><a href="#">Volleyball</a></li>
+           		<li><a href="#">Basketball</a></li>
+           		<li><a href="#">Table Tennis</a></li>
+           		<li class="dropdown"><a href="#">Customer Care<span class="caret"></span></a>
+             		<ul class="dropdown-menu"> 
+        				<li><a href="#">Call us</a></li>                
+             		</ul>
+           		</li>
+				<li><a href="javascript:void(0)" data-target="#contactmodal" data-toggle="modal">LogIn</a></li>
+         	</ul>
+     	</div>   
+	</div>		
+</div> <!--Menu Close-->
+		
+		<!--Login Model-->
+<div id="contactmodal" class="modal fade" role="alertdialog">
+	<div class="modal-dialog">
+   		<div class="modal-content" >
+   			<div class="row" style="background:url(img/login-img.jpg) no-repeat;margin-right: 0;
+    		margin-left: 0 !important;height:415px ">
+   				<div class="col-sm-6">
+				   <h1><span class="txt_small" style="color:white">Welcome to <br />
+        			sportrix</span>
+    				</h1>
+    				<div class="abc" style="margin-top:220px">
+   						<a href="https://www.facebook.com/"><button type="submit" class="form-control btn btn-xs btn-primary">Facebook</button></a>
+    					<a href="https://www.google.com/"><button type="submit" class="form-control btn btn-xs btn-danger" style="margin-top:5px">Google+</button></a>
+    				</div>
+   				</div>
+   				<div class="col-sm-6">
+       				<div class="modal-header">
+          				<a href="#contactmodal" data-dismiss="modal" class="close">&times;</a>
+          				<h1 style="color:#000;">Log in</h1>
+       				</div>
+       
+	<div class="modal-body">
+		<form action="#" method="post" enctype="multipart/form-data">
+        	<div class="form-horizontal">
+				<label>Email ID:</label>
+					<input type="email" name="email" required class="form-control" />
+			</div><br/>
+			<div class="form-horizontal">
+				<label>Password:</label>
+					<input type="password" name="passw" required class="form-control"/>
+			</div><br/>
+			<div class="form-horizontal">
+				<input type="checkbox" name="keep"  required="required"/>
+					<label>keep me logged in	</label>
+			</div><br/>
+                <button type="submit" class="form-control btn btn-xs btn-success">
+					<span class="glyphicon glyphicon-user"></span> Log in</button><br/>
+                		<h5 style="color:#000"><center>--------------Or--------------</center></h5>
+			  			<a href="javascript:void(0)" data-target="#contactmodal1" data-toggle="modal" onclick="reg()"><center>Create account</a> | <a href="#">Forget Password</center></a>
+		</form>
+	</div>
+     			</div>
+   			</div>
+		</div>
+	</div>
+</div><!--Login Closed-->
+	
+	<!--Register Model-->
+<div id="contactmodal1" class="modal fade" role="alertdialog">
+	<div class="modal-dialog">
+		<div class="modal-content" >
+			<div class="row" style="background:url(img/login-img.jpg) no-repeat;margin-right: 0;
+    		margin-left: 0 !important;height:415px ">
+				<div class="col-sm-6">
+				<h1><span class="txt_small">Welcome to</span><br />sportrix
+    			</h1>
+    			<div class="abc" style="margin-top:220px">
+   					<a href="https://www.facebook.com/"><button type="submit" class="form-control btn btn-xs btn-primary">Facebook</button></a>
+					<a href="https://www.google.com/"><button type="submit" class="form-control btn btn-xs btn-danger" style="margin-top:5px">Google+</button></a>
+    			</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="modal-header">
+						<a href="#contactmodal" data-dismiss="modal" class="close">&times;</a>
+							<h1 style="color:#000;">Register</h1>
+       				</div>
+				<div class="modal-body">
+					<form action="registerdb.php" method="post" enctype="multipart/form-data">
+						<div class="form-horizontal">
+							<label>Your Name</label>
+								<input type="text" name="name" required class="form-control"/>
+						</div>
+						<div class="form-horizontal">
+							<label>Mobile Number</label>
+								<input type="text" name="mob" required class="form-control"/>
+						</div>
+						<div class="form-horizontal">
+							<label>Email (optional)</label>
+								<input type="email" name="email" required class="form-control"/>
+						</div>
+						<div class="form-horizontal">
+							<label>Password</label>
+								<input type="password" name="passw" required class="form-control"/>
+						</div><br/>
+						<div class="form-horizontal">
+							<button type="submit" class="form-control btn btn-xs btn-success" onclick="sign()">
+								<span class="glyphicon glyphicon-user">
+								</span> Register
+							</button>
+						</div>
+					</form>
+     			</div>
+     			</div>
+			</div>
+		</div>
+	</div>
+</div>
+	<!--Register Closed-->
+	
+	<!--Product Open-->	
+<div class="containerinner"><br/>
+	<div class="row">
+		<div class="col-sm-1">
+			<div class="panel panel-default panel1">
+				<div class="panel-body" style="text-shadow:none">
+			    	<center><img src="img/bat.jpg" width="80" height="80" alt=""></center>
+				</div>
+			</div>
+			<div class="panel panel-default panel1 smallboxbottom">
+				<div class="panel-body" style="text-shadow:none">
+			    	<center><img src="img/bat.jpg" width="80" height="80" alt=""></center>
+				</div>
+			</div>
+			<div class="panel panel-default panel1 smallboxbottom">
+				<div class="panel-body" style="text-shadow:none">
+			    	<center><img src="img/bat.jpg" width="80" height="80" alt=""></center>
+				</div>
+			</div>
+        </div>
+		
+		<div class="col-sm-5">
+			<div class="panel panel-default panel1 bigbox">
+				<div class="panel-body" style="text-shadow:none">
+			    	<center><img src="img/bat.jpg" width="400" height="400" alt=""></center>
+				</div>
+			</div>
+			<div class="boxadd">
+				<div class="boxaddfont">
+					<i class="fas fa-shopping-cart" style="margin-top: 20px"></i> ADD To Cart
+				</div>
+			</div>
+			<div class="boxbuy">
+				<div class="boxbuyfont">
+					<i class="fas fa-shopping-bag" style="margin-top: 20px"></i> Buy Now!
+				</div>
+			</div>
+        </div>
+		
+		<div class="col-sm-6 boxbordertwoside">
+			<div class="crilink">Home > Sports > Cricket > Cricket Bat...></div>
+			<div class="crinormalfont">Shop for Sports Equipments across Cycling, Cricket, Gyming & More. Pay COD*. Pay on Delivery. Free Shipping* Easy Returns. Low Prices. Huge Selection.</div>
+			<div class="circlerating">
+				<div class="crifontrating"><strong>3.5</strong>
+				<i class="fa fa-star" aria-hidden="true" style="margin-top: 16px;"></i>
+				</div>
+			</div>
+			<div class="ratingreview"><strong>2,999 Rating,612 Reviews!</strong></div>
+			<div class="rsrate">&#8377;399</div>
+			<div class="rsratedel"><del>&#8377;1399</del>
+				<div class="rsoff">76% OFF &nbsp; 
+					<i class="fa fa-info-circle" aria-hidden="true" style="color:#E1DDDD"></i>
+				</div>
+			</div>
+			<i class="fa fa-tags" aria-hidden="true" style="color:orange; margin-top: 20px;"></i><strong>&nbsp;Bank Offer</strong>&nbsp;Extra 5% Off* with Axis Bank Buzz Credit Card <span style="color: blue">T&C</span>
+			
+			<div class"row">
+				<div class="col-sm-2 dshheading">
+					<strong>Delivery</strong>
+				</div>	
+				<div class="col-sm-5 dshheading">
+					<i class="fa fa-street-view" aria-hidden="true" style="color:orange"></i> 
+					<strong class="linedelivery">Enter Delivery Pincode&nbsp;&nbsp;<span style="color: blue">Check</span></strong>
+					<br><strong style="color: black">Usually delivered in7-8 days</strong>
+					<br>Enter pincode for exact delivery&nbsp;<i class="fa fa-question-circle" aria-hidden="true"style="color:#E1DDDD"></i>
+					<br> <strong><span style="color: blue">view details</span></strong>
+				</div>	
+				<div class="col-sm-2"></div>	
+				<div class="col-sm-3 "></div>				
+			</div><br><br><br><br><br><br>
+	
+			
+			<div class"row">
+				<div class="col-sm-2">
+					<strong style="color:#808080">Size</strong>
+				</div>	
+				<div class="col-sm-5"> 
+					<div class="lnghandl">
+						<div class="lnghandlfont">Long Handle</div>
+					</div>
+					<strong><span style="color: blue;margin-left: 112px; margin-top: 10px;">Size Chart</span></strong>
+				</div>	
+				<div class="col-sm-2"><strong style="color:#808080">Color</strong></div>	
+				<div class="col-sm-3">
+				<div class="panel panel-default panel1 smallboxbottom">
+				<div class="panel-body" style="text-shadow:none">
+			    	<center><img src="img/bat.jpg" width="80" height="80" alt=""></center>
+				</div>
+				</div>
+				</div>
+			</div>
+			
+			<div class"row">
+				<div class="col-sm-2">
+					<strong style="color:#808080">Hightlight</strong>
+				</div>	
+				<div class="col-sm-5"> 
+					<ul>
+						<li>Age Group 12 - 14 Yrs</li>
+						<li>Blade Made of Poplar Willow</li>
+						<li>Advanced, Recreational, Intermediate, Beginner Playing Level</li>
+						<li>Bat Grade: Grade 1+</li>
+						<li>Sport Type: Cricket</li>
+						<li>Weight Range 1-1.2 kg</li>
+					</ul>
+				</div>	
+				<div class="col-sm-2"><strong style="color:#808080">Services</strong></div>	
+				<div class="col-sm-3">
+				<i class="fa fa-refresh" aria-hidden="true" style="color:orange"></i> 10 Days Replacement Policy<i class="fa fa-question-circle" aria-hidden="true"style="color:#E1DDDD"></i>
+				</div>
+			</div>
+		
+		
+		
+		</div>
+	</div>
+</div>
+	<!--Product Closed-->	
+	
+	
+	
+		
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>	
+	<script src="js/rix1.js"></script>
+</body>
+</html>
